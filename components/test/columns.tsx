@@ -33,7 +33,7 @@ export const columns: ColumnDef<Project>[] = [
     cell: ({ row }) => {
       return (
         <div className="flex space-x-2">
-          <Link className="max-w-[500px] truncate font-medium" href="/login">
+          <Link className="max-w-[500px] truncate font-medium">
             {row.getValue("project_name")}
           </Link>
         </div>
