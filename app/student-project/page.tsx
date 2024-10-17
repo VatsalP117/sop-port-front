@@ -85,7 +85,7 @@ export default function ProfileForm(props) {
   const projectId = searchParams.get("projectId");
   useEffect(() => {
     const response = fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/student/getprojectdescription`,
+      `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/student/getprojectdescription`,
       {
         method: "POST",
         headers: {
@@ -268,7 +268,7 @@ export default function ProfileForm(props) {
               try {
                 //console.log(remarks, category);
                 const response: any = await fetch(
-                  `${process.env.NEXT_PUBLIC_API_URL}/api/student/applyforproject`,
+                  `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/student/applyforproject`,
                   {
                     method: "POST",
                     headers: {

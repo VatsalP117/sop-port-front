@@ -68,7 +68,7 @@ function filterData(
 }
 async function getData(setData: any): Promise<Boolean> {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/student/getallprojects`,
+    `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/student/getallprojects`,
     {
       method: "GET",
       withCredentials: true,

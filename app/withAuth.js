@@ -8,7 +8,7 @@ const checkAuthentication = async (setUser, type) => {
   // Check if the user is authenticated
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
+      `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/auth/user`,
       {
         method: "GET",
         withCredentials: true,

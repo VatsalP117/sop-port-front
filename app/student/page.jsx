@@ -42,10 +42,13 @@ import { toast } from "sonner";
 const Student = (props) => {
   const [studentDetails, setStudentDetails] = useState([]);
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/student/getstudentprojects`, {
-      method: "GET",
-      withCredentials: true,
-    }).then((response) => {
+    fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/student/getstudentprojects`,
+      {
+        method: "GET",
+        withCredentials: true,
+      }
+    ).then((response) => {
       if (response.status === 200) {
         response.json().then((data) => {
           setStudentDetails(data);

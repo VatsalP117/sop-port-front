@@ -46,7 +46,7 @@ const Faculty = (props) => {
         </Card>
 
         <Button asChild>
-          <Link href="/project?projectId=new">Add Project</Link>
+          <Link href="/projectalloc/project?projectId=new">Add Project</Link>
         </Button>
       </div>
       <div className="projects-section basis-3/4 ">

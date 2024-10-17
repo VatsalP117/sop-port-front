@@ -14,7 +14,7 @@ function Admin() {
       bg-[length:200%_100%]
       animate-gradient"
         onClick={() => {
-          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/hello`)
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/hello`)
             .then((res) => res.text())
             .then((data) => {
               let link = document.createElement("a");

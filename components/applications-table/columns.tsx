@@ -131,7 +131,7 @@ export const columns: ColumnDef<Application>[] = [
                 size="sm"
                 onClick={async () => {
                   fetch(
-                    `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/acceptstudent`,
+                    `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/acceptstudent`,
                     {
                       method: "POST",
                       headers: {
@@ -158,7 +158,7 @@ export const columns: ColumnDef<Application>[] = [
                 size="sm"
                 onClick={() => {
                   fetch(
-                    `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/rejectstudent`,
+                    `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/rejectstudent`,
                     {
                       method: "POST",
                       headers: {

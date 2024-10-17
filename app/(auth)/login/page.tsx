@@ -31,7 +31,7 @@ export default function LoginPage() {
             className="flex flex-row justify-center items-center"
             onClick={() => {
               window.open(
-                `${process.env.NEXT_PUBLIC_API_URL}/api/auth/google`,
+                `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/auth/google`,
                 "_self"
               );
             }}

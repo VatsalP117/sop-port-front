@@ -107,16 +107,19 @@ const allTags = [
 
 async function getData(setData: any, projectId: any): Promise<Boolean> {
   // Fetch data from your API here.
-  fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/faculty/getprojectapplicants`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      projectid: projectId,
-    }),
-    withCredentials: true,
-  })
+  fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/getprojectapplicants`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        projectid: projectId,
+      }),
+      withCredentials: true,
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       console.log(data);

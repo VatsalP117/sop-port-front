@@ -108,7 +108,7 @@ function ProfileForm(props) {
   useEffect(() => {
     if (projectId !== "new") {
       fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/getprojectdescription`,
+        `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/getprojectdescription`,
         {
           method: "POST",
           headers: {
@@ -167,7 +167,7 @@ function ProfileForm(props) {
     if (projectId === "new") {
       try {
         const response: any = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/createproject`,
+          `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/createproject`,
           {
             method: "POST",
             headers: {
@@ -196,7 +196,7 @@ function ProfileForm(props) {
     } else {
       try {
         const response: any = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/faculty/editproject`,
+          `${process.env.NEXT_PUBLIC_API_URL}/projectalloc/api/faculty/editproject`,
           {
             method: "POST",
             headers: {
